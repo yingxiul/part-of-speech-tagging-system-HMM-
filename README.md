@@ -1,8 +1,10 @@
 # part-of-speech-tagging-system-HMM-
 Hidden Markov Mode; Forward-backward algorithm
 
-- learnhmm.py  
+- learnhmm.py
+
 Extract prior, emission and transition probabilities matrices from training data
+
 $ python learnhmm.py [args...]
 Where above [args...] is a placeholder for six command-line arguments:<train input> <index to word><index to tag> <hmmprior><hmmemit><hmmtrans>. These arguments are described in detail below:
 1. <train input>: path to the training input.txt file
@@ -11,9 +13,12 @@ Where above [args...] is a placeholder for six command-line arguments:<train inp
 4. <hmmprior>: path to output .txt file to which the estimated prior will be written. The file output to this path should be in the same format as the handout hmmprior.txt
 5. <hmmemit>: path to output.txt fille to which the emission probabilities will be written. The file output to this path should be in the same format as the handout hmmemit.txt
 6. <hmmtrans>: path to output .txt file to which the transition probabilities will be written. The file output to this path should be in the same format as the handout hmmtrans.txt
-             
+      
+      
 - hmm.py  
+
 Execute forward-backward algorithm on given sequence
+
 $ python forwardbackward.py [args...]
 Where above [args...] is a placeholder for seven command-line arguments:<test input> <index to word><index to tag> <hmmprior> <hmmemit> <hmmtrans> <predicted file>. These arguments are described in detail below:
 1. <test input>: path to the test input .txt file that will be evaluated by the forward backward algorithm
